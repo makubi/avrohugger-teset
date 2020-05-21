@@ -1,0 +1,12 @@
+@namespace("com.my.pkg.two")
+protocol ProtocolTwo {
+    import idl "fileOne.avdl";
+
+    record MyRecord {
+        string id;
+    }
+
+    record UsesMyRecord {
+        com.my.pkg.one.MyRecord myRecord;
+    }
+}
